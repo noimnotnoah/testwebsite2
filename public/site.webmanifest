@@ -1,0 +1,16 @@
+{
+  "name": "Mike's Laptops & Custom PCs",
+  "short_name": "Mike's Laptops",
+  "description": "Refurbished laptops, custom gaming PCs, and repairs in Exeter.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
