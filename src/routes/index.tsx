@@ -651,7 +651,7 @@ function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5 font-display font-black text-xl text-white">
             <img src="/logo.png" alt="Mike's Laptop's" className="h-9 w-auto object-contain" />
-            Mike's Laptops & Custom Gaming PCs
+            Mike's Laptop's & Custom Gaming PCs
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed">
             Independent, family-run computer specialists in Exeter. Refurbished
