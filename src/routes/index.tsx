@@ -156,9 +156,7 @@ function Nav() {
       <div className="max-w-7xl mx-auto px-4">
         <nav className={`glass rounded-2xl px-5 py-3 flex items-center justify-between transition-all duration-500 ${scrolled ? "shadow-[var(--shadow-soft)]" : ""}`}>
           <a href="#home" className="flex items-center gap-2.5 font-display font-black text-lg">
-            <span className="w-9 h-9 rounded-xl grid place-items-center text-white" style={{ background: "var(--gradient-primary)" }}>
-              <I.cpu className="w-5 h-5" />
-            </span>
+            <img src="/logo.png" alt="Mike's Laptop's" className="w-9 h-9 rounded-xl object-contain" />
             <span>Mike's Laptop's<span className="text-[color:var(--primary)]">.</span></span>
           </a>
           <ul className="hidden lg:flex items-center gap-1">
@@ -652,9 +650,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5 font-display font-black text-xl text-white">
-            <span className="w-9 h-9 rounded-xl grid place-items-center" style={{ background: "var(--gradient-primary)" }}>
-              <I.cpu className="w-5 h-5" />
-            </span>
+            <img src="/logo.png" alt="Mike's Laptop's" className="w-9 h-9 rounded-xl object-contain" />
             Mike's Laptops & Custom Gaming PCs
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed">
