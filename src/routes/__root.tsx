@@ -14,7 +14,7 @@ const siteUrl = "https://www.mikeslaptops.co.uk";
 const siteTitle = "Mike's Laptop's & Custom PCs — Exeter | Refurbished Laptops, Gaming PCs & Repairs";
 const siteDescription =
   "Independent, family-run computer shop in Exeter. Ex-corporate refurbished Dell & Lenovo laptops, bespoke gaming PCs, repairs and upgrades. 46+ years combined experience. 5.0★ Google rated.";
-const siteImage = "https://www.mikeslaptops.co.uk/logo.png";
+const siteImage = "https://www.mikeslaptops.co.uk/logo.webp";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -125,6 +125,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "canonical", href: siteUrl },
+      { rel: "icon", href: "/favicon.png", sizes: "32x32", type: "image/png" },
       { rel: "icon", href: "/logo.png", type: "image/png" },
       { rel: "apple-touch-icon", href: "/logo.png" },
       { rel: "manifest", href: "/site.webmanifest" },
