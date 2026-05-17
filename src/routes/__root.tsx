@@ -14,13 +14,12 @@ const siteUrl = "https://www.mikeslaptops.co.uk";
 const siteTitle = "Mike's Laptop's & Custom PCs — Exeter | Refurbished Laptops, Gaming PCs & Repairs";
 const siteDescription =
   "Independent, family-run computer shop in Exeter. Ex-corporate refurbished Dell & Lenovo laptops, bespoke gaming PCs, repairs and upgrades. 46+ years combined experience. 5.0★ Google rated.";
-const siteImage = "https://www.mikeslaptops.co.uk/logo.avif";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ComputerStore",
   name: "Mike's Laptop's & Custom PCs",
-  image: [siteImage],
+  image: ["https://www.mikeslaptops.co.uk"],
   url: siteUrl,
   telephone: "+44 7888 257303",
   email: "info@mikeslaptops.co.uk",
@@ -112,12 +111,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: siteDescription },
       { property: "og:type", content: "website" },
       { property: "og:url", content: siteUrl },
-      { property: "og:locale", content: "en_GB" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: siteTitle },
-      { name: "twitter:description", content: siteDescription },
-      { property: "og:image", content: siteImage },
-      { name: "twitter:image", content: siteImage },
     ],
     links: [
       {
@@ -125,8 +118,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "canonical", href: siteUrl },
-      { rel: "icon", href: "/logo.avif", type: "image/avif" },
-      { rel: "apple-touch-icon", href: "/logo.avif" },
       { rel: "manifest", href: "/site.webmanifest" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
