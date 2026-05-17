@@ -35,7 +35,7 @@ const localBusinessSchema = {
   sameAs: [
     "https://www.facebook.com/mikeslaptops",
     "https://www.instagram.com/mikeslaptops/",
-    "https://www.google.com/maps/place/Mike's+Laptops",
+    "https://maps.app.goo.gl/N6UYv6WJ9uxwDudM9",
   ],
 };
 

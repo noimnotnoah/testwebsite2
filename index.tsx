@@ -492,7 +492,7 @@ function Reviews() {
               4.9★ on Google.<br/><span className="text-gradient">153 reviews and counting.</span>
             </h2>
           </div>
-          <a href="https://www.google.com/maps/place/Mike's+Laptops" target="_blank" rel="noopener" className="btn-ghost">
+          <a href="https://maps.app.goo.gl/N6UYv6WJ9uxwDudM9" target="_blank" rel="noopener" className="btn-ghost">
             <I.google className="w-4 h-4" /> Read all reviews
           </a>
         </div>
@@ -549,10 +549,10 @@ function Contact({ prefill, onSent }: { prefill: string; onSent: ()=>void }) {
 
           <div className="mt-10 space-y-4">
             {[
-              { icon: I.pin, label: "Lower-Ground Floor, 4 Southernhay West, Exeter, EX1 1JG", sub: "Plus code: PFCC+PX Exeter", href: "https://www.google.com/maps/dir/?api=1&destination=4%20Southernhay%20W%2C%20Exeter%20EX1%201JG%2C%20UK" },
+              { icon: I.pin, label: "Lower-Ground Floor, 4 Southernhay West, Exeter, EX1 1JG", sub: "Plus code: PFCC+PX Exeter", href: "https://maps.app.goo.gl/N6UYv6WJ9uxwDudM9" },
               { icon: I.phone, label: "07888 257303", sub: "WhatsApp friendly", href: "tel:07888257303" },
               { icon: I.mail, label: "info@mikeslaptops.co.uk", sub: "We reply quickly", href: "mailto:info@mikeslaptops.co.uk" },
-              { icon: I.clock, label: "Opens 10am Tue", sub: "Check Google for live hours", href: "https://www.google.com/maps/place/Mike's+Laptops" },
+              { icon: I.clock, label: "Opens 10am Tue", sub: "Check Google for live hours", href: "https://maps.app.goo.gl/N6UYv6WJ9uxwDudM9" },
             ].map(c => (
               <a key={c.label} href={c.href} className="card-snap flex items-center gap-4 bg-white border border-[var(--border)] rounded-2xl p-5">
                 <span className="w-12 h-12 rounded-xl grid place-items-center text-white shrink-0" style={{ background: "var(--gradient-primary)" }}>
@@ -570,7 +570,7 @@ function Contact({ prefill, onSent }: { prefill: string; onSent: ()=>void }) {
             <a href="https://wa.me/447888257303" target="_blank" rel="noopener" aria-label="WhatsApp" className="w-11 h-11 grid place-items-center rounded-full bg-white border border-[var(--border)] hover:text-[color:var(--primary)] hover:border-[color:var(--primary)] transition-colors"><I.wa className="w-5 h-5" /></a>
             <a href="https://www.facebook.com/mikeslaptops" target="_blank" rel="noopener" aria-label="Facebook" className="w-11 h-11 grid place-items-center rounded-full bg-white border border-[var(--border)] hover:text-[color:var(--primary)] hover:border-[color:var(--primary)] transition-colors"><I.fb className="w-5 h-5" /></a>
             <a href="https://www.instagram.com/mikeslaptops/" target="_blank" rel="noopener" aria-label="Instagram" className="w-11 h-11 grid place-items-center rounded-full bg-white border border-[var(--border)] hover:text-[color:var(--primary)] hover:border-[color:var(--primary)] transition-colors"><I.ig className="w-5 h-5" /></a>
-            <a href="https://www.google.com/maps/place/Mike's+Laptops" target="_blank" rel="noopener" aria-label="Google" className="w-11 h-11 grid place-items-center rounded-full bg-white border border-[var(--border)] hover:text-[color:var(--primary)] hover:border-[color:var(--primary)] transition-colors"><I.google className="w-5 h-5" /></a>
+            <a href="https://maps.app.goo.gl/N6UYv6WJ9uxwDudM9" target="_blank" rel="noopener" aria-label="Google" className="w-11 h-11 grid place-items-center rounded-full bg-white border border-[var(--border)] hover:text-[color:var(--primary)] hover:border-[color:var(--primary)] transition-colors"><I.google className="w-5 h-5" /></a>
           </div>
         </div>
 
@@ -622,7 +622,7 @@ function Footer() {
             <a href="https://wa.me/447888257303" target="_blank" rel="noopener" className="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition-colors" aria-label="WhatsApp"><I.wa className="w-4 h-4" /></a>
             <a href="https://www.facebook.com/mikeslaptops" target="_blank" rel="noopener" className="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition-colors" aria-label="Facebook"><I.fb className="w-4 h-4" /></a>
             <a href="https://www.instagram.com/mikeslaptops/" target="_blank" rel="noopener" className="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition-colors" aria-label="Instagram"><I.ig className="w-4 h-4" /></a>
-            <a href="https://www.google.com/maps/place/Mike's+Laptops" target="_blank" rel="noopener" className="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition-colors" aria-label="Google"><I.google className="w-4 h-4" /></a>
+            <a href="https://maps.app.goo.gl/N6UYv6WJ9uxwDudM9" target="_blank" rel="noopener" className="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition-colors" aria-label="Google"><I.google className="w-4 h-4" /></a>
           </div>
         </div>
         <div>
