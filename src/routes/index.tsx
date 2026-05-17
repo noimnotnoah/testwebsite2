@@ -5,7 +5,7 @@ import build1 from "@/assets/build-1.jpg";
 import build2 from "@/assets/build-2.jpg";
 import build3 from "@/assets/build-3.jpg";
 
-export const Route = createFileRoute("/")({ component: Index });
+export const Route = createFileRoute("/")({ component: HomePage });
 
 /* ============ Cursor ============ */
 function CustomCursor() {
@@ -714,7 +714,7 @@ function FloatingDock() {
 }
 
 /* ============ Index ============ */
-function Index() {
+export function HomePage() {
   useReveal();
   const [serviceIdx, setServiceIdx] = useState<number | null>(null);
   const [success, setSuccess] = useState(false);
