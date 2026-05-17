@@ -11,7 +11,7 @@ import {
 import appCss from "../styles.css?url";
 
 const siteUrl = "https://www.mikeslaptops.co.uk";
-const siteTitle = "Mike's Laptops & Custom PCs — Exeter | Refurbished Laptops, Gaming PCs & Repairs";
+const siteTitle = "Mike's Laptop's & Custom PCs — Exeter | Refurbished Laptops, Gaming PCs & Repairs";
 const siteDescription =
   "Independent, family-run computer shop in Exeter. Ex-corporate refurbished Dell & Lenovo laptops, bespoke gaming PCs, repairs and upgrades. 46+ years combined experience. 5.0★ Google rated.";
 const siteImage =
@@ -20,7 +20,7 @@ const siteImage =
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ComputerStore",
-  name: "Mike's Laptops & Custom PCs",
+  name: "Mike's Laptop's & Custom PCs",
   image: [siteImage],
   url: siteUrl,
   telephone: "+44 7888 257303",

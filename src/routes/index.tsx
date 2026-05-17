@@ -156,7 +156,7 @@ function Nav() {
             <span className="w-9 h-9 rounded-xl grid place-items-center text-white" style={{ background: "var(--gradient-primary)" }}>
               <I.cpu className="w-5 h-5" />
             </span>
-            <span>Mike's<span className="text-[color:var(--primary)]">.</span></span>
+            <span>Mike's Laptop's<span className="text-[color:var(--primary)]">.</span></span>
           </a>
           <ul className="hidden lg:flex items-center gap-1">
             {links.map(([l,h]) => (
