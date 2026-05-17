@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import heroChip from "@/assets/hero-chip.png";
-import build1 from "@/assets/build-1.jpg";
-import build2 from "@/assets/build-2.jpg";
+import build1 from "@/assets/pcbuild.avif";
+import build2 from "@/assets/computerrepair.avif";
 import build3 from "@/assets/build-3.jpg";
+import mikefacecardAvif from "@/assets/mikefacecard.avif";
+import buildWithYou from "@/assets/buildwithyou.avif";
 
 export const Route = createFileRoute("/")({ component: HomePage });
 
@@ -112,6 +114,7 @@ const process = [
 
 const builds = [
   { img: build1, tag: "Custom Gaming PC", title: "Mid-tower blue-loop build" },
+  { img: buildWithYou, tag: "Build With You", title: "Hands-on session — you build it, we guide" },
   { img: build2, tag: "Repair & Upgrade", title: "SSD + RAM upgrade in progress" },
   { img: build3, tag: "Refurbished Laptop", title: "Ex-corporate Dell, tested & cleaned" },
 ];
@@ -458,14 +461,23 @@ function About() {
 
         <div className="lg:col-span-7 grid grid-cols-2 gap-5">
           {team.map((m,i) => (
-            <div key={m.name} className="card-snap reveal bg-white border border-[var(--border)] rounded-2xl p-6 flex flex-col items-start"
+            <div key={m.name} className="card-snap reveal bg-white border border-[var(--border)] rounded-2xl overflow-hidden flex flex-col"
                  style={{ transitionDelay: `${i*100}ms` }}>
-              <span className="w-16 h-16 rounded-2xl grid place-items-center text-white font-display font-black text-2xl mb-4"
-                    style={{ background: "var(--gradient-primary)" }}>
-                {m.init}
-              </span>
-              <div className="font-display font-extrabold text-2xl text-[color:var(--ink)]">{m.name}</div>
-              <div className="text-sm text-[color:var(--muted-foreground)] mt-1">{m.role}</div>
+              {m.name === "Mike" ? (
+                <div className="aspect-[4/3] overflow-hidden bg-black">
+                  <img src={mikefacecardAvif} alt="Mike" loading="lazy" width={1280} height={1024}
+                       className="w-full h-full object-cover" />
+                </div>
+              ) : (
+                <span className="w-16 h-16 rounded-2xl grid place-items-center text-white font-display font-black text-2xl mb-4 ml-6 mt-6"
+                      style={{ background: "var(--gradient-primary)" }}>
+                  {m.init}
+                </span>
+              )}
+              <div className="p-6 pt-4 flex flex-col flex-1">
+                <div className="font-display font-extrabold text-2xl text-[color:var(--ink)]">{m.name}</div>
+                <div className="text-sm text-[color:var(--muted-foreground)] mt-1">{m.role}</div>
+              </div>
             </div>
           ))}
         </div>
